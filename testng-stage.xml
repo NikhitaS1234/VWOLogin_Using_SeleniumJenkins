@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="SeleniumAutomationJenkins">
+        <classes>
+            <class name="SeleniumJenkins4.SeleniumTestCaseRunning">
+                <methods>
+                    <include name="testInvalidLogin"/>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+
+        </classes>
+        <groups>
+            <run>
+                <include name="stage"></include>
+            </run>
+        </groups>
+
+
+    </test>
+</suite>
